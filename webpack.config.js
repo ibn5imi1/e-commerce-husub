@@ -44,7 +44,7 @@ module.exports = {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            esModule: false 
+                            esModule: false
                         }
                     },
                     {
@@ -66,15 +66,23 @@ module.exports = {
         filename: "index.html",
         template: "./src/index.html"
     }),
+    new HtmlWebpackPlugin({
+        filename: "product.html",
+        template: "./src/product.html"
+    }),
+    new HtmlWebpackPlugin({
+        filename: "checkout.html",
+        template: "./src/checkout.html"
+    }),
     new MiniCssExtractPlugin({
         filename: "css/style.css"
     }),
     new CssMinimizerPlugin()
-],
+    ],
 
     // plugins: [new HtmlWebpackPlugin({
     //     filename: "product.html",
     //     template: "./src/product.html"
     // })]
-    
+
 };

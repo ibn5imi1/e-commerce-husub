@@ -4,6 +4,7 @@ window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 import "bootstrap/dist/css/bootstrap.rtl.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./css/style.css";
+import "./sass/style.scss";
 
 document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(item => new bootstrap.Tooltip(item))
 document.querySelectorAll('.add-to-cart-btn').forEach(item => {

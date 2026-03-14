@@ -38,7 +38,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.css$/,
+                test: /\.(css|scss)$/i,
                 exclude: /bootstrap\.min\.css$/i,
                 use: [
                     {
@@ -50,6 +50,9 @@ module.exports = {
                     {
                         loader: "css-loader",
                         options: { importLoaders: 1 }
+                    },
+                    {
+                        loader: "sass-loader"
                     }
                 ]
             },
